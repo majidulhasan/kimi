@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offline - Al-Falah Boutique</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: linear-gradient(135deg, #0f3d2e 0%, #1a5f4a 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    
+    .offline-container {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    }
+    
+    .icon {
+      width: 80px;
+      height: 80px;
+      background: #f0fdf4;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+    }
+    
+    .icon svg {
+      width: 40px;
+      height: 40px;
+      color: #0f3d2e;
+    }
+    
+    h1 {
+      color: #0f3d2e;
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    
+    p {
+      color: #666;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    
+    .btn {
+      display: inline-block;
+      background: #0f3d2e;
+      color: white;
+      padding: 14px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .btn:hover {
+      background: #1a5f4a;
+      transform: translateY(-2px);
+    }
+    
+    .tips {
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid #eee;
+      text-align: left;
+    }
+    
+    .tips h3 {
+      color: #333;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    
+    .tips ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .tips li {
+      color: #666;
+      font-size: 14px;
+      padding: 6px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+    
+    .tips li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: #0f3d2e;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="offline-container">
+    <div class="icon">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.829m2.829 2.829L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 2.829a4.978 4.978 0 01-1.414-2.83m-1.414 5.658a9 9 0 01-2.167-9.238m7.824 2.167a1 1 0 111.414 1.414m-1.414-1.414L3 3m8.293 8.293l1.414 1.414" />
+      </svg>
+    </div>
+    <h1>You're Offline</h1>
+    <p>It seems you've lost your internet connection. Don't worry - Al-Falah Boutique works offline too!</p>
+    <button class="btn" onclick="window.location.reload()">Try Again</button>
+    
+    <div class="tips">
+      <h3>What you can do offline:</h3>
+      <ul>
+        <li>Browse previously viewed products</li>
+        <li>View your cart and wishlist</li>
+        <li>Check your order history</li>
+        <li>Place orders (will sync when online)</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
